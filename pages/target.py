@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
-st.markdown("# Tri par target 📈")
-st.sidebar.markdown("# Tri par target 📈")
+st.markdown("# Tri par objectif 📈")
+st.sidebar.markdown("# Tri par objectif 📈")
 
 st.write("Importez un fichier Excel, choisissez la feuille. Visualisez vos données sous forme de graphiques interactifs pour une analyse claire et rapide.")
 # Chargement des données
@@ -45,7 +45,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["MONTANT CASH IN REALISE"],
         name="Cash In Réalisé",
-        marker_color="red"
+        marker_color="hsl(44.23, 98.16%, 57.45%)"
     ))
 
     # Ajout des barres pour Cash In Target (bleu)
@@ -53,7 +53,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["MONTANT CASH IN TARGET"],
         name="Cash In Target",
-        marker_color="blue"
+        marker_color="hsl(198, 73.17%, 32.16%)"
     ))
 
     # Mise en page du graphique
@@ -78,7 +78,7 @@ if uploaded_file:
         x=zone_data1["ZONES"],
         y=zone_data1["MONTANT CASH OUT REALISE"],
         name="Cash OUT Réalisé",
-        marker_color="red"
+        marker_color="hsl(44.23, 98.16%, 57.45%)"
     ))
 
     # Ajout des barres pour Cash OUT Target (bleu)
@@ -86,7 +86,7 @@ if uploaded_file:
         x=zone_data1["ZONES"],
         y=zone_data1["MONTANT CASH OUT TARGET"],
         name="Cash OUT Target",
-        marker_color="blue"
+        marker_color="hsl(198, 73.17%, 32.16%)"
     ))
 
     # Mise en page du graphique
@@ -111,7 +111,7 @@ if uploaded_file:
         x=zone_data1["ZONES"],
         y=zone_data1["MONTANT CICO REALISE"],
         name="Cico Réalisé",
-        marker_color="red"
+        marker_color="hsl(44.23, 98.16%, 57.45%)"
     ))
 
     # Ajout des barres pour Cash OUT Target (bleu)
@@ -119,7 +119,7 @@ if uploaded_file:
         x=zone_data1["ZONES"],
         y=zone_data1["MONTANT CICO TARGET"],
         name="Cico Target",
-        marker_color="blue"
+        marker_color="hsl(198, 73.17%, 32.16%)"
     ))
 
     # Mise en page du graphique
@@ -144,7 +144,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["AGENT APP ACTIF REALISE"],
         name="Agent réellement Actif",
-        marker_color="red"
+        marker_color="hsl(44.23, 98.16%, 57.45%)"
     ))
 
     # Ajout des barres pour Cash In Target (bleu)
@@ -152,7 +152,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["AGENT APP ACTIF TARGET"],
         name="Agent Actif Target",
-        marker_color="blue"
+        marker_color="hsl(198, 73.17%, 32.16%)"
     ))
 
     # Mise en page du graphique
@@ -177,7 +177,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["AGENT APP CICO REALISE"],
         name="Agent ayant réalisé un cico",
-        marker_color="red"
+        marker_color="hsl(44.23, 98.16%, 57.45%)"
     ))
 
     # Ajout des barres pour Cash In Target (bleu)
@@ -185,7 +185,7 @@ if uploaded_file:
         x=zone_data["ZONES"],
         y=zone_data["AGENT APP CICO TARGET"],
         name="Objectif d'agent ayant réalisé un cico",
-        marker_color="blue"
+        marker_color="hsl(198, 73.17%, 32.16%)"
     ))
 
     # Mise en page du graphique

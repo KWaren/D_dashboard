@@ -43,8 +43,8 @@ if uploaded_file:
                         zone_data = data.groupby("ZONES")[cols].sum().reset_index()
                         fig = go.Figure()
                         
-                        fig.add_trace(go.Bar(x=zone_data["ZONES"], y=zone_data[cols[0]], name=f"{tab_name} Réalisé", marker_color="red"))
-                        fig.add_trace(go.Bar(x=zone_data["ZONES"], y=zone_data[cols[1]], name=f"{tab_name} Target", marker_color="blue"))
+                        fig.add_trace(go.Bar(x=zone_data["ZONES"], y=zone_data[cols[0]], name=f"{tab_name} Réalisé", marker_color="hsl(44.23, 98.16%, 57.45%)"))
+                        fig.add_trace(go.Bar(x=zone_data["ZONES"], y=zone_data[cols[1]], name=f"{tab_name} Target", marker_color="hsl(198, 73.17%, 32.16%)"))
                         
                         fig.update_layout(xaxis_title="Zones", yaxis_title="Montants / Agents", barmode="group")
                         st.plotly_chart(fig)

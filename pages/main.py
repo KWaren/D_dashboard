@@ -47,7 +47,7 @@ if uploaded_file:
                     x=zone_data["ZONES"],
                     y=zone_data[col1],
                     name=col1,
-                    marker_color="red"
+                    marker_color="hsl(44.23, 98.16%, 57.45%)"
                 ))
 
                 # Ajout des barres pour la deuxième colonne
@@ -55,7 +55,7 @@ if uploaded_file:
                     x=zone_data["ZONES"],
                     y=zone_data[col2],
                     name=col2,
-                    marker_color="blue"
+                    marker_color="hsl(198, 73.17%, 32.16%)"
                 ))
 
                 # Mise en page du graphique
